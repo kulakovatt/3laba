@@ -195,8 +195,9 @@ namespace _3laba
             {
                 Console.WriteLine($"{p.Firstname}");
             }
-            Console.WriteLine("_________________________________________");
-            foreach (Customer p in customer) //список покупателей, у которых номер кредитной карточки находится в заданном интервале
+            Console.WriteLine("_______________________________________________________________________________________");
+            Console.WriteLine("Список  покупателей, у которых номер кредитной карточки находится в заданном интервале:");
+            foreach (Customer p in customer) //сортировка в заданном интервале
             {
                 if (p.CreditCard > 7000000000000000)
                 {
@@ -205,6 +206,7 @@ namespace _3laba
 
                 }   
             }
+            Console.WriteLine("_________________________________________");
             Console.WriteLine("Зачисление средств на счёт Kulakova:");
             Console.WriteLine("Баланс на данный момент: " + p1.Balance);
             p1.Enrollment();
